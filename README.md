@@ -25,6 +25,18 @@ globalContext.someSingletonData = ...
 
 ```
 
+### Adapt manually other realm
+
+If there's a need to adapt other environment realm (e.g. coming from iframe) to share same uni-global directory.
+
+Register it with `adaptRealm` util as below:
+
+```javascript
+const adaptRealm = require("uni-global/adapt-realm");
+
+adaptRealm(iFrameWindow); // Pass global object of the other realm
+```
+
 ### Installation
 
 ```bash
