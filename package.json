@@ -1,6 +1,6 @@
 {
 	"name": "uni-global",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Global namespace without polluting the global scope",
 	"author": "Mariusz Nowak <medyk@medikoo.com> (https://www.medikoo.com/)",
 	"keywords": [
