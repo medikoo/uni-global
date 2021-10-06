@@ -4,6 +4,27 @@
 
 # uni-global
 
+## Global namespace with no global scope pollution
+
+### Use case
+
+In modules world, there's possiblity that two different instance of same modules (e.g. installed in different `node_modules`) are being run in same process.
+
+If for any reason they need to operate on context instance that's same for the given application or process, then ocassionally introduced multiple installations may break the application.
+
+This module provides interface wich can be used by those to modules to ensure that no matter how many instances of given module are loaded, in all cases they end with same context instance.
+
+### Example usage:
+
+```javascript
+// No matter how many instances of given module are loaded in the process, they will always end with same context instance
+const globalContext = require("uni-global")("my-scope-name");
+
+// globalContext is a plain object, on which needed global data can be stored.
+globalContext.someSingletonData = ...
+
+```
+
 ### Installation
 
 ```bash

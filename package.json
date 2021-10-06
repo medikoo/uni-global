@@ -8,6 +8,9 @@
 		"globalThis"
 	],
 	"repository": "medikoo/uni-global",
+	"dependencies": {
+		"type": "^2.5.0"
+	},
 	"devDependencies": {
 		"@commitlint/cli": "^13.2.0",
 		"chai": "^4.3.4",
@@ -46,7 +49,7 @@
 		},
 		"overrides": [
 			{
-				"files": "**/*.test.js",
+				"files": "test/**/*.js",
 				"env": {
 					"mocha": true
 				}
@@ -73,7 +76,7 @@
 		"exclude": [
 			".github",
 			"coverage/**",
-			"**/*.test.js",
+			"test/**",
 			"prettier.config.js"
 		],
 		"reporter": [
