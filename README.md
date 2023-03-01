@@ -12,7 +12,7 @@ In modules world, there's possiblity that two different instance of same modules
 
 If for any reason they need to operate on context instance that's same for the given application or process, then ocassionally introduced multiple installations may break the application.
 
-This module provides interface wich can be used by those to modules to ensure that no matter how many instances of given module are loaded, in all cases they end with same context instance.
+This module provides interface wich can be used to ensure that no matter how many instances of given module are loaded, in all cases they end with same context instance.
 
 ### Example usage:
 
