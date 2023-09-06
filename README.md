@@ -43,6 +43,10 @@ adaptRealm(iFrameWindow); // Pass global object of the other realm
 npm install uni-global
 ```
 
+## Security contact information
+
+To report a security vulnerability, please use the [Tidelift security contact](https://tidelift.com/security). Tidelift will coordinate the fix and disclosure.
+
 [build-image]: https://github.com/medikoo/uni-global/workflows/Integrate/badge.svg
 [build-url]: https://github.com/medikoo/uni-global/actions?query=workflow%3AIntegrate
 [cov-image]: https://img.shields.io/codecov/c/github/medikoo/uni-global.svg
